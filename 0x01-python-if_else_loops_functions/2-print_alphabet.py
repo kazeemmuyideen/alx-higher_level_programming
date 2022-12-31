@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-letter = 96
-while (letter < 122):
-    letter += 1
-    print(chr(letter), end="")
+"""Print the alphabet in lowercase, not followed by a new line."""
+
+for letter in range(97, 123):
+    print("{}".format(chr(letter)), end="")
