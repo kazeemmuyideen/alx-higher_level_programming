@@ -1,5 +1,9 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 def update_dictionary(a_dictionary, key, value):
-    """Replace or add key/value pairs in a dictionary."""
-    a_dictionary[key] = value
-    return (a_dictionary)
+    if key not in a_dictionary:
+        a_dictionary[key] = value
+    else:
+        for i in a_dictionary:
+            if i == key:
+                a_dictionary[i] = value
+    return a_dictionary
